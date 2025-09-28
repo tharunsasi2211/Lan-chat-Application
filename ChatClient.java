@@ -4,10 +4,7 @@ import java.awt.event.*;
 import java.io.*;
 import java.net.*;
 
-/**
- * Simple Swing chat client.
- * Usage: java ChatClient [host] [port]
- */
+
 public class ChatClient extends JFrame {
     private JTextArea chatArea;
     private JTextField inputField;
@@ -135,10 +132,9 @@ public class ChatClient extends JFrame {
         SwingUtilities.invokeLater(() -> {
             ChatClient client = new ChatClient();
             client.setVisible(true);
-            // optionally auto-connect if args provided
             if (args.length >= 1) {
-                // not auto-connecting here to keep UI responsive; user can click Connect
             }
         });
     }
 }
+
